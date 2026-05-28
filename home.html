@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/home.css">
     <title>Despedida | Aura-Sync</title>
 </head>
@@ -82,22 +85,30 @@
 
     <div class="features-grid">
       <div class="feature-card">
-        <div class="feature-icon"></div>
+        <div class="feature-icon">
+          <img src="img/localizacao.png" alt="Navegação">
+        </div>
         <h3>Navegação Autônoma</h3>
         <p>Movimentação inteligente com sensores de precisão.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon"></div>
+        <div class="feature-icon">
+          <img src="img/sensores.png" alt="Sensores">
+        </div>
         <h3>Sensores Inteligentes</h3>
         <p>Coleta de dados ambientais em tempo real.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon"></div>
+        <div class="feature-icon">
+          <img src="img/ia.png" alt="Inteligência Artificial">
+        </div>
         <h3>IA Embarcada</h3>
         <p>Análise avançada para decisões rápidas.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon"></div>
+        <div class="feature-icon">
+          <img src="img/monitoramento.png" alt="Monitoramento">
+        </div>
         <h3>Monitoramento Remoto</h3>
         <p>Controle e acompanhamento de qualquer lugar.</p>
       </div>
@@ -130,6 +141,71 @@
       </div>
     </div>
   </section>
-  <footer></footer> 
+  
+  <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <section class="footer-cta">
+            <video autoplay muted loop playsinline class="video-background">
+                <source src="img/fundo.mp4" type="video/mp4">
+            </video>
+            <div class="footer-cta-content">
+                <h2>Realize mais com a CredTech.</h2>
+                <p>Crédito inteligente para transformar seus planos em conquistas.</p>
+                <a href="#" class="btn-cta-footer">Simular agora →</a>
+            </div>
+        </section>
+
+        <!-- Seção Principal de Links (Fundo Claro) -->
+        <section class="footer-links">
+            <div class="container footer-links-grid">
+                <!-- Coluna 1: Logo e Descrição da Empresa -->
+                <div class="footer-column footer-company-info">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="Logo_CredTech_Footer"> <!-- Placeholder para o seu logo -->
+                    </div>
+                    <p class="footer-description">Sua fintech de crédito digital confiável e rápida. Cuidando das suas finanças com tecnologia.</p>
+                    <div class="social-icons">
+                        <!-- Placeholders para os ícones de mídia social -->
+                        <a href="#"><img src="img/facebook.png" alt="Facebook"></a> 
+                        <a href="#"><img src="img/linkedin.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Institucional -->
+                <div class="footer-column">
+                    <h3>Institucional</h3>
+                    <ul>
+                        <li><a href="#">Simulador</a></li>
+                        <li><a href="#">Empréstimos</a></li>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Central de Ajuda</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Newsletter -->
+                <div class="footer-column footer-newsletter">
+                    <h3>Fique por Dentro</h3>
+                    <p>Receba dicas financeiras, novidades e ofertas exclusivas da CredTech.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Endereço de e-mail" required>
+                        <button type="submit">Inscrever-se</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rodapé Inferior (Direitos Autorais e Legal) -->
+        <section class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 CredTech. Todos os direitos reservados.</p>
+                <div class="legal-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Avisos Legais</a>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
