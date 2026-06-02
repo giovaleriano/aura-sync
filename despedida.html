@@ -3,11 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/boasvindas.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
     <title>Despedida | Aura-Sync</title>
 </head>
 <body>
-  <head></head>
-  <section></section>
-  <footer></footer>  
+
+    <div class="main-container">
+        <video autoplay muted loop playsinline class="video-bg">
+            <source src="img/fundo.mp4" type="video/mp4">
+        </video>
+
+        <div class="content-overlay">
+            <h1 class="welcome-title">
+                Volte sempre <span id="user-name">...</span>!
+            </h1>
+        </div>
+    </div>
+
+    <script>
+        // 1. Define o nome do usuário
+        const nome = localStorage.getItem("usuarioLogado") || "Visitante";
+        document.getElementById("user-name").innerText = nome;
+
+        // 2. Lógica de Redirecionamento
+        setTimeout(function() {
+            window.location.href = "home.php";
+        }, 5000); 
+    </script>
+
 </body>
 </html>
