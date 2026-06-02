@@ -3,11 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
     <title>Dashboard | Aura-Sync</title>
 </head>
 <body>
-  <head></head>
-  <section></section>
-  <footer></footer>  
+    <!--Cabeçalho-->
+    <header class="header">
+      <div class="logo">
+        <a href="home.html">
+          <img src="img/logo.png" alt="Logo Aura-Sync">
+        </a>
+      </div>
+
+      <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="dashboard.html" class="menu-ativo">Dashboard</a>
+        <a href="sensores.html">Sensores</a>
+        <a href="robo.html">Robô</a>
+        <a href="sobre_nos.html">Sobre Nós</a>
+        <a href="central_ajuda.html">Central de Ajuda</a>
+      </nav>
+
+      <button class="btn-sair">
+        <a href="despedida.html">Sair</a>
+      </button>
+    </header>
+
+    <main class="dashboard">
+        <div class="top-cards">
+            <div class="status-card">
+                <img src="" alt="Online">
+                <h4>Sistema</h4>
+                <span>Online</span>
+            </div>
+            <div class="status-card">
+                <img src="" alt="Bateria">
+                <h4>Bateria</h4>
+                <span>86%</span>
+            </div>
+            <div class="status-card">
+                <img src="" alt="Temperatura">
+                <h4>Temperatura</h4>
+                <span>28.4°C</span>
+            </div>
+            <div class="status-card">
+                <img src="" alt="Sensores">
+                <h4>Sensores</h4>
+                <span>Online</span>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <section class="mapa">
+                <h3>Mapa em Tempo Real</h3>
+                <img src="img/mapa.png">
+            </section>
+            <section class="camera">
+                <h3>Câmera ao Vivo</h3>
+                <img src="img/camera.png">
+            </section>
+            <section class="robo-card">
+                <img src="img/robo.png">
+            </section>
+
+            <section class="sensor-card">
+                <h3>Sensores</h3>
+                <div class="sensor-grid">
+                    <div>Temperatura<br>28.4°C</div>
+                    <div>Umidade<br>56%</div>
+                    <div>Gás<br>0.04%</div>
+                    <div>Distância<br>2.45m</div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <section class="footer-cta">
+            <video autoplay muted loop playsinline class="video-background">
+                <source src="img/fundo.mp4" type="video/mp4">
+            </video>
+            <div class="footer-cta-content">
+                <h2>Inspeção com inteligência.</h2>
+                <p>Monitore ambientes críticos em tempo real com sensores inteligentes, navegação autônoma e análise avançada de dados.</p>
+                <a href="dashboard.html" class="btn-cta-footer">Explorar Sistema →</a>
+            </div>
+        </section>
+
+        <!-- Seção Principal de Links (Fundo Claro) -->
+        <section class="footer-links">
+            <div class="container footer-links-grid">
+                <!-- Coluna 1: Logo e Descrição da Empresa -->
+                <div class="footer-column footer-company-info">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="Logo_CredTech_Footer"> <!-- Placeholder para o seu logo -->
+                    </div>
+                    <p class="footer-description">O Aura-Sync robótica, sensores inteligentes e monitoramento em tempo real.</p>
+                    <div class="social-icons">
+                        <!-- Placeholders para os ícones de mídia social -->
+                        <a href="#"><img src="img/facebook.png" alt="Facebook"></a> 
+                        <a href="#"><img src="img/linkedin.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Institucional -->
+                <div class="footer-column">
+                    <h3>Institucional</h3>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="sensores.html">Sensores</a></li>
+                        <li><a href="robo.html">Robô</a></li>
+                        <li><a href="sobre_nos.html">Sobre Nós</a></li>
+                        <li><a href="central_ajuda.html">Central de Ajuda</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Newsletter -->
+                <div class="footer-column footer-newsletter">
+                    <h3>Receba Atualizações</h3>
+                    <p>Fique por dentro das Novidades do Aura Sync, atualizações do sistema e avanços em inspeção autônoma.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Endereço de e-mail" required>
+                        <button type="submit">Inscrever-se</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rodapé Inferior (Direitos Autorais e Legal) -->
+        <section class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 Aura-Sync. Todos os direitos reservados.</p>
+                <div class="legal-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Avisos Legais</a>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
