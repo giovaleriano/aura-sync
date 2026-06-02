@@ -104,6 +104,10 @@ body{
     cursor: pointer;
     transition: 0.3s;
 }
+.btn-sair a{
+    color: white;
+    text-decoration: none;
+}
 .btn-sair:hover{
     background: var(--primary-light);
     box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
@@ -435,6 +439,8 @@ body{
 
 /* CTA BUTTON */
 .btn-cta-footer{
+    display: inline-block;
+    text-decoration: none;
     background:
         linear-gradient(
             135deg,
