@@ -3,11 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/central_ajuda.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
     <title>Central de Ajuda | Aura-Sync</title>
 </head>
 <body>
-  <head></head>
-  <section></section>
-  <footer></footer>  
+    <!--Cabeçalho-->
+    <header class="header">
+        <div class="logo">
+            <a href="home.html">
+                <img src="img/logo.png" alt="Logo Aura-Sync">
+            </a>
+        </div>
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="sensores.html">Sensores</a>
+            <a href="robo.html">Robô</a>
+            <a href="sobre_nos.html">Sobre Nós</a>
+            <a href="central_ajuda.html" class="menu-ativo">Central de Ajuda</a>
+        </nav>
+
+        <button class="btn-sair">
+            <a href="despedida.html">Sair</a>
+        </button>
+    </header>
+
+<main class="container">
+
+    <!-- HERO -->
+
+    <section class="help-hero">
+
+        <h1>Como podemos ajudar?</h1>
+
+        <p>
+            Encontre respostas rápidas e suporte para o seu robô.
+        </p>
+
+        <div class="search-box">
+
+            <input
+            type="text"
+            placeholder="Buscar por perguntas, tópicos ou recursos">
+
+            <button>
+                🔍
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- CATEGORIAS -->
+
+    <section>
+
+        <h2>Categorias</h2>
+
+        <div class="categories-grid">
+
+            <div class="category-card">
+                <div class="icon">📘</div>
+                <h3>Introdução</h3>
+                <p>Primeiros passos e configuração.</p>
+            </div>
+
+            <div class="category-card">
+                <div class="icon">📡</div>
+                <h3>Sensores</h3>
+                <p>Leitura e calibração dos sensores.</p>
+            </div>
+
+            <div class="category-card">
+                <div class="icon">📊</div>
+                <h3>Dashboard</h3>
+                <p>Monitoramento e análise.</p>
+            </div>
+
+            <div class="category-card">
+                <div class="icon">🤖</div>
+                <h3>Robô</h3>
+                <p>Operação e manutenção.</p>
+            </div>
+
+            <div class="category-card">
+                <div class="icon">⚙️</div>
+                <h3>API</h3>
+                <p>Integrações e desenvolvimento.</p>
+            </div>
+
+            <div class="category-card">
+                <div class="icon">ℹ️</div>
+                <h3>Troubleshooting</h3>
+                <p>Solução para problemas comuns.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FAQ + SUPORTE -->
+
+    <section class="bottom-grid">
+
+        <div class="faq-card">
+
+            <h2>Perguntas Frequentes</h2>
+
+            <details>
+                <summary>
+                    Como calibrar os sensores do robô?
+                </summary>
+
+                <p>
+                    Acesse o painel Sensores e utilize a opção
+                    "Calibrar Sensores".
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    Qual a autonomia da bateria?
+                </summary>
+
+                <p>
+                    Até 8 horas de operação contínua.
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    Como atualizar o sistema?
+                </summary>
+
+                <p>
+                    Vá em Configurações → Atualizações.
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    Como recuperar uma senha?
+                </summary>
+
+                <p>
+                    Utilize a opção "Esqueci minha senha".
+                </p>
+            </details>
+
+            <a href="#" class="more-link">
+                Ver todas as perguntas →
+            </a>
+
+        </div>
+
+        <div class="support-card">
+
+            <h2>Suporte</h2>
+
+            <p>
+                Nossa equipe está pronta para ajudar você.
+            </p>
+
+            <img src="img/headset.png" alt="Suporte">
+
+            <button>
+                Abrir Chat
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <section class="footer-cta">
+            <video autoplay muted loop playsinline class="video-background">
+                <source src="img/fundo.mp4" type="video/mp4">
+            </video>
+            <div class="footer-cta-content">
+                <h2>Inspeção com inteligência.</h2>
+                <p>Monitore ambientes críticos em tempo real com sensores inteligentes, navegação autônoma e análise avançada de dados.</p>
+                <a href="dashboard.html" class="btn-cta-footer">Explorar Sistema →</a>
+            </div>
+        </section>
+
+        <!-- Seção Principal de Links (Fundo Claro) -->
+        <section class="footer-links">
+            <div class="container footer-links-grid">
+                <!-- Coluna 1: Logo e Descrição da Empresa -->
+                <div class="footer-column footer-company-info">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="Logo_CredTech_Footer"> <!-- Placeholder para o seu logo -->
+                    </div>
+                    <p class="footer-description">O Aura-Sync robótica, sensores inteligentes e monitoramento em tempo real.</p>
+                    <div class="social-icons">
+                        <!-- Placeholders para os ícones de mídia social -->
+                        <a href="#"><img src="img/facebook.png" alt="Facebook"></a> 
+                        <a href="#"><img src="img/linkedin.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Institucional -->
+                <div class="footer-column">
+                    <h3>Institucional</h3>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="sensores.html">Sensores</a></li>
+                        <li><a href="robo.html">Robô</a></li>
+                        <li><a href="sobre_nos.html">Sobre Nós</a></li>
+                        <li><a href="central_ajuda.html">Central de Ajuda</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Newsletter -->
+                <div class="footer-column footer-newsletter">
+                    <h3>Receba Atualizações</h3>
+                    <p>Fique por dentro das Novidades do Aura Sync, atualizações do sistema e avanços em inspeção autônoma.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Endereço de e-mail" required>
+                        <button type="submit">Inscrever-se</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rodapé Inferior (Direitos Autorais e Legal) -->
+        <section class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 Aura-Sync. Todos os direitos reservados.</p>
+                <div class="legal-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Avisos Legais</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
 </body>
 </html>
