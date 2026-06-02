@@ -1,13 +1,257 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós | Aura-Sync</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sobre_nos.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+  <title>Sobre Nós | Aura Sync</title>
 </head>
 <body>
-  <head></head>
-  <section></section>
-  <footer></footer>  
+
+  <header class="header">
+    <div class="logo">
+      <a href="home.html">
+        <img src="img/logo.png" alt="Logo Aura-Sync">
+      </a>
+    </div>
+
+    <nav class="navbar">
+      <a href="home.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="sensores.html">Sensores</a>
+      <a href="robo.html">Robô</a>
+      <a href="sobre_nos.html" class="menu-ativo">Sobre Nós</a>
+      <a href="central_ajuda.html">Central de Ajuda</a>
+    </nav>
+
+    <button class="btn-sair">
+      <a href="despedida.html">Sair</a>
+    </button>
+  </header>
+
+  <main class="about-container">
+    <!-- HERO -->
+    <section class="hero-card">
+        <div class="hero-content">
+            <h1>Sobre Nós</h1>
+            <p>
+                Transformamos ambientes críticos em locais mais seguros com
+                robótica inteligente e monitoramento contínuo.
+            </p>
+
+            <div class="mission-card">
+                <h3>Nossa Missão</h3>
+                <p>
+                    Desenvolver soluções inovadoras em inspeção autônoma,
+                    aumentando a segurança, eficiência e confiabilidade
+                    operacional.
+                </p>
+            </div>
+
+            <div class="stats">
+                <div>
+                    <strong>50+</strong>
+                    <span>Clientes</span>
+                </div>
+                <div>
+                    <strong>98%</strong>
+                    <span>Precisão</span>
+                </div>
+                <div>
+                    <strong>24/7</strong>
+                    <span>Monitoramento</span>
+                </div>
+                <div>
+                    <strong>10+</strong>
+                    <span>Projetos</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="img/robo.png" alt="Robô">
+        </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section class="section-card">
+        <h2>Nossa Tecnologia</h2>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <div class="icon">🗺</div>
+                <h3>Mapeamento</h3>
+                <p>Navegação inteligente em ambientes complexos.</p>
+            </div>
+            <div class="tech-card">
+                <div class="icon">📡</div>
+                <h3>Sensores IoT</h3>
+                <p>Monitoramento contínuo e coleta de dados.</p>
+            </div>
+            <div class="tech-card">
+                <div class="icon">🤖</div>
+                <h3>Inspeção Autônoma</h3>
+                <p>Robôs inteligentes para análise em tempo real.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPE -->
+    <section class="section-card">
+        <h2>Equipe Web</h2>
+        <div class="team-grid">
+            <div class="member">
+                <img src="img/giovana.jpeg" alt="Giovana">
+                <h4>Giovana</h4>
+                <span>Eng. Robótica</span>
+            </div>
+            <div class="member">
+                <img src="img/ana.jpeg" alt="Ana">
+                <h4>Ana Clara</h4>
+                <span>IA e Dados</span>
+            </div>
+        </div>
+    </section>
+    <section class="section-card">
+        <h2>Equipe Desktop</h2>
+        <div class="team-grid">
+            <div class="member">
+                <img src="img/user1.jpg" alt="">
+                <h4>Gabriel Henrique</h4>
+                <span>Eng. Robótica</span>
+            </div>
+            <div class="member">
+                <img src="img/user2.jpg" alt="">
+                <h4>Thales</h4>
+                <span>IA e Dados</span>
+            </div>
+            <div class="member">
+                <img src="img/user3.jpg" alt="">
+                <h4>Daniel</h4>
+                <span>Hardware</span>
+            </div>
+            <div class="member">
+                <img src="img/user4.jpg" alt="">
+                <h4>Pedro</h4>
+                <span>UX/UI</span>
+            </div>
+        </div>
+    </section>
+    <section class="section-card">
+        <h2>Equipe Sensores</h2>
+        <div class="team-grid">
+            <div class="member">
+                <img src="img/rita.jpeg" alt="Rita">
+                <h4>Rita</h4>
+                <span>Eng. Robótica</span>
+            </div>
+            <div class="member">
+                <img src="img/gabrield.jpeg" alt="Gabriel Dias">
+                <h4>Gabriel Dias</h4>
+                <span>IA e Dados</span>
+            </div>
+            <div class="member">
+                <img src="img/user2.jpg" alt="">
+                <h4>Lucas</h4>
+                <span>IA e Dados</span>
+            </div>
+            <div class="member">
+                <img src="img/user2.jpg" alt="">
+                <h4>Tiago</h4>
+                <span>IA e Dados</span>
+            </div>
+        </div>
+    </section>
+    <section class="section-card">
+        <h2>Equipe Hardware</h2>
+        <div class="team-grid">
+            <div class="member">
+                <img src="img/emily.jpeg" alt="Emily">
+                <h4>Emily</h4>
+                <span>Eng. Robótica</span>
+            </div>
+            <div class="member">
+                <img src="img/user2.jpg" alt="">
+                <h4>Gabriel Felipe</h4>
+                <span>IA e Dados</span>
+            </div>
+            <div class="member">
+                <img src="img/user2.jpg" alt="">
+                <h4>Gabriel Lemos</h4>
+                <span>IA e Dados</span>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+      <section class="footer-cta">
+          <video autoplay muted loop playsinline class="video-background">
+              <source src="img/fundo.mp4" type="video/mp4">
+          </video>
+          <div class="footer-cta-content">
+              <h2>Inspeção com inteligência.</h2>
+              <p>Monitore ambientes críticos em tempo real com sensores inteligentes, navegação autônoma e análise avançada de dados.</p>
+              <a href="dashboard.html" class="btn-cta-footer">Explorar Sistema →</a>
+          </div>
+        </section>
+
+        <!-- Seção Principal de Links (Fundo Claro) -->
+        <section class="footer-links">
+          <div class="container footer-links-grid">
+            <!-- Coluna 1: Logo e Descrição da Empresa -->
+            <div class="footer-column footer-company-info">
+              <div class="footer-logo">
+                <img src="img/logo.png" alt="Logo_CredTech_Footer"> <!-- Placeholder para o seu logo -->
+              </div>
+              <p class="footer-description">O Aura-Sync robótica, sensores inteligentes e monitoramento em tempo real.</p>
+              <div class="social-icons">
+              <!-- Placeholders para os ícones de mídia social -->
+                <a href="#"><img src="img/facebook.png" alt="Facebook"></a> 
+                <a href="#"><img src="img/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+              </div>
+            </div>
+
+            <!-- Coluna 2: Institucional -->
+            <div class="footer-column">
+              <h3>Institucional</h3>
+              <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="sensores.html">Sensores</a></li>
+                <li><a href="robo.html">Robô</a></li>
+                <li><a href="sobre_nos.html">Sobre Nós</a></li>
+                <li><a href="central_ajuda.html">Central de Ajuda</a></li>
+              </ul>
+            </div>
+
+            <!-- Coluna 4: Newsletter -->
+            <div class="footer-column footer-newsletter">
+              <h3>Receba Atualizações</h3>
+              <p>Fique por dentro das Novidades do Aura Sync, atualizações do sistema e avanços em inspeção autônoma.</p>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Endereço de e-mail" required>
+                <button type="submit">Inscrever-se</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- Rodapé Inferior (Direitos Autorais e Legal) -->
+        <section class="footer-bottom">
+          <div class="container footer-bottom-content">
+            <p>&copy; 2026 Aura-Sync. Todos os direitos reservados.</p>
+            <div class="legal-links">
+              <a href="#">Política de Privacidade</a>
+              <a href="#">Termos de Uso</a>
+              <a href="#">Avisos Legais</a>
+            </div>
+          </div>
+        </section>
+    </footer>
 </body>
 </html>
