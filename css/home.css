@@ -41,7 +41,10 @@ body{
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
 }
-
+.header img{
+    width: auto;
+    height: 30px;
+}
 /*Logo*/
 .logo{
     display: flex;
@@ -436,7 +439,7 @@ body{
         linear-gradient(
             135deg,
             var(--primary-color),
-            var(--primary-light)
+            var(--bg-color)
         );
     color: white;
     padding: 16px 36px;
@@ -505,8 +508,8 @@ body{
 }
 
 .social-icons a img{
-    width: 18px;
-    height: 18px;
+    width: 42px;
+    height: 42px;
     object-fit: contain;
 }
 
@@ -577,6 +580,8 @@ body{
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 .newsletter-form button:hover{
     box-shadow:
