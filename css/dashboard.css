@@ -134,11 +134,52 @@ body{
     grid-template-columns:repeat(4,1fr);
     gap:20px;
 }
+.status-card img{
+    height: 45px;
+    width: 45px;
+}
 .status-card{
-    background:var(--bg-secondary);
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:20px;
-    padding:20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+.status-info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.status-info h4{
+    margin: 0;
+}
+.status-info span{
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+.status-card:hover{
+    transform: translateY(-10px);
+    border-color: rgba(59, 130, 246, 0.5);
+    box-shadow: 
+        0 0 30px rgba(59, 130, 246, 0.15),
+        0 0 60px rgba(59, 130, 246, 0.8);
+}
+.status-card::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(59, 130, 246, 0.8);
+    border-radius: 50%;
+    top: -80px;
+    right: -80px;
+    filter: blur(50px);
 }
 .dashboard-grid{
     display:grid;

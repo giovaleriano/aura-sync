@@ -127,7 +127,7 @@ body{
 }
 
 .page-header h1{
-    font-size:32px;
+    font-size:36px;
 }
 
 .page-header p{
@@ -159,13 +159,12 @@ body{
     display:grid;
     grid-template-columns:
     repeat(3,1fr);
-
     gap:20px;
 }
 
 .sensor-card{
-    background:var(--card);
-    border:1px solid var(--border);
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
     border-radius:20px;
     padding:20px;
     min-height:280px;
@@ -173,12 +172,15 @@ body{
 }
 
 .sensor-card:hover{
-    border-color:rgba(59,130,246,.4);
-
+    transform: translateY(-8px);
+    border-color: rgba(59,130,246,0.4);
     box-shadow:
-    0 0 25px rgba(59,130,246,.12);
+        0 0 30px rgba(59,130,246,0.1);
 }
-
+.sensor-card img{
+    width: 140px;
+    height: 140px;
+}
 .sensor-card h3{
     margin-bottom:20px;
 }
@@ -213,8 +215,8 @@ body{
 
 
 .gas-circle{
-    width:140px;
-    height:140px;
+    width:160px;
+    height:160px;
     border-radius:50%;
 
     border:8px solid #10B981;
