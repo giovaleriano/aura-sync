@@ -11,32 +11,30 @@
     <title>Sensores | Aura-Sync</title>
 </head>
 <body>
-    <!--Cabeçalho-->
-  <header class="header">
-    <div class="logo">
-      <a href="home.html">
-        <img src="img/logo.png" alt="Logo Aura-Sync">
-      </a>
-    </div>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="logo">
+            <a href="home.html">
+                <img src="img/logo.png" alt="Logo Aura-Sync">
+            </a>
+        </div>
 
-    <nav class="navbar">
-      <a href="home.html">Home</a>
-      <a href="dashboard.html">Dashboard</a>
-      <a href="sensores.html" class="menu-ativo">Sensores</a>
-      <a href="robo.html">Robô</a>
-      <a href="sobre_nos.html">Sobre Nós</a>
-      <a href="central_ajuda.html">Central de Ajuda</a>
-    </nav>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="sensores.html" class="menu-ativo">Sensores</a>
+            <a href="robo.html">Robô</a>
+            <a href="sobre_nos.html">Sobre Nós</a>
+            <a href="central_ajuda.html">Central de Ajuda</a>
+        </nav>
 
-    <button class="btn-sair">
-      <a href="despedida.html">Sair</a>
-    </button>
-  </header>
+        <button class="btn-sair">
+            <a href="despedida.html">Sair</a>
+        </button>
+    </header>
 
-    <!-- CONTEÚDO -->
-
+    <!-- ================= MAIN ================= -->
     <main class="content">
-
         <div class="page-header">
             <h1>Sensores</h1>
             <p>Monitoramento ambiental em tempo real</p>
@@ -51,11 +49,8 @@
         </div>
 
         <div class="sensors-grid">
-
-            <!-- LiDAR -->
-
+            <!--Cards-->
             <div class="sensor-card">
-
                 <h3>LiDAR 360°</h3>
 
                 <div class="sensor-visual lidar">
@@ -73,13 +68,10 @@
                         <strong>0.5°</strong>
                     </div>
                 </div>
-
             </div>
 
-            <!-- TÉRMICA -->
-
+            <!--Temperatura-->
             <div class="sensor-card">
-
                 <h3>Câmera Térmica</h3>
 
                 <div class="thermal-box">
@@ -97,37 +89,28 @@
                         <strong>0.05°C</strong>
                     </div>
                 </div>
-
             </div>
 
-            <!-- GÁS -->
-
+            <!--Gás-->
             <div class="sensor-card">
-
                 <h3>Detector de Gás</h3>
 
                 <div class="gas-circle">
-
                     <div class="gas-value">
                         0.04%
                     </div>
-
                 </div>
 
                 <p>Nível Normal</p>
-
             </div>
 
-            <!-- ULTRASSOM -->
-
+            <!--Ultrassom-->
             <div class="sensor-card">
-
                 <h3>Ultrassom</h3>
 
                 <div class="radar"></div>
 
                 <div class="sensor-info">
-
                     <div>
                         <span>Distância</span>
                         <strong>2.45m</strong>
@@ -137,25 +120,18 @@
                         <span>Status</span>
                         <strong>Ativo</strong>
                     </div>
-
                 </div>
-
             </div>
 
-            <!-- IMU -->
-
+            <!--Imu-->
             <div class="sensor-card">
-
                 <h3>IMU / Movimento</h3>
 
                 <div class="imu-graph">
-
                     <div class="line"></div>
-
                 </div>
 
                 <div class="sensor-info">
-
                     <div>
                         <span>Aceleração</span>
                         <strong>0.02 m/s²</strong>
@@ -165,27 +141,20 @@
                         <span>Giroscópio</span>
                         <strong>0.01 °/s</strong>
                     </div>
-
                 </div>
-
             </div>
 
-            <!-- UMIDADE -->
-
+            <!--Umidade-->
             <div class="sensor-card">
-
                 <h3>Umidade & Temp.</h3>
 
                 <div class="humidity-circle">
-
                     <div>
                         28.4°C
                     </div>
-
                 </div>
 
                 <div class="sensor-info">
-
                     <div>
                         <span>Temperatura</span>
                         <strong>28.4°C</strong>
@@ -195,13 +164,9 @@
                         <span>Umidade</span>
                         <strong>56%</strong>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </main>
 
     <!-- ================= FOOTER ================= -->
