@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    background:#01050f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.background{
+    position:absolute;
+    inset:0;
+}
+
+.light{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(120px);
+}
+
+.light1{
+    width:500px;
+    height:500px;
+    background:#0044ff;
+
+    top:-100px;
+    right:-100px;
+
+    animation:float1 12s infinite ease-in-out;
+}
+
+.light2{
+    width:600px;
+    height:600px;
+    background:#0a2b8a;
+
+    bottom:-200px;
+    left:20%;
+
+    animation:float2 14s infinite ease-in-out;
+}
+
+.light3{
+    width:400px;
+    height:400px;
+    background:#002366;
+
+    top:30%;
+    left:-100px;
+
+    animation:float3 10s infinite ease-in-out;
+}
+
+@keyframes float1{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(100px);
+    }
+
+}
+
+@keyframes float2{
+
+    0%,100%{
+        transform:translateX(0);
+    }
+
+    50%{
+        transform:translateX(-120px);
+    }
+
+}
+
+@keyframes float3{
+
+    0%,100%{
+        transform:translate(0,0);
+    }
+
+    50%{
+        transform:translate(80px,-80px);
+    }
+
+}
+
+.login-container{
+
+    position:relative;
+    z-index:10;
+
+    width:420px;
+
+    padding:40px;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    background:rgba(0,0,0,.35);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:25px;
+
+    color:white;
+
+    box-shadow:
+    0 0 40px rgba(0,89,255,.25);
+}
+
+.login-container h1{
+    margin-bottom:10px;
+}
+
+.login-container p{
+    margin-bottom:20px;
+}
+
+input{
+
+    width:100%;
+
+    margin-bottom:15px;
+
+    padding:14px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+}
+
+button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+
+form button{
+
+    background:#0066ff;
+    color:white;
+}
+
+.secondary{
+
+    margin-top:12px;
+
+    background:#1b1b1b;
+    color:white;
+}
+
+#mensagem{
+
+    margin-top:15px;
+
+    text-align:center;
+}

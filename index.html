@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Aura-Sync</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | Aura Sync</title>
+
+<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <head></head>
-  <section></section>
-  <footer></footer>  
+
+<div class="background">
+    <div class="light light1"></div>
+    <div class="light light2"></div>
+    <div class="light light3"></div>
+</div>
+
+<div class="login-container">
+
+    <h1>Aura Sync</h1>
+    <p>Entre na sua conta</p>
+
+    <form id="loginForm">
+
+        <input
+            type="email"
+            id="email"
+            placeholder="E-mail"
+            required
+        >
+
+        <input
+            type="password"
+            id="senha"
+            placeholder="Senha"
+            required
+        >
+
+        <button type="submit">
+            Entrar
+        </button>
+
+    </form>
+
+    <button id="criarConta" class="secondary">
+        Criar Conta
+    </button>
+
+    <p id="mensagem"></p>
+
+</div>
+
+<script src="js/login.js"></script>
+
 </body>
 </html>
