@@ -22,15 +22,20 @@
     </div>
 
     <script>
-        // 1. Define o nome do usuário
-        const nome = localStorage.getItem("usuarioLogado") || "Visitante";
-        document.getElementById("user-name"). innerText = nome;
 
-        // 2. Lógica de Redirecionamento
-        setTimeout(function() {
+        const nome =
+        localStorage.getItem("usuarioNome") || "Visitante";
+
+        document.getElementById("user-name").innerText =
+        nome;
+
+        setTimeout(() => {
+
             window.location.href = "home.html";
-        }, 5000); 
-    </script>
+
+        }, 5000);
+
+        </script>
 
 </body>
 </html>

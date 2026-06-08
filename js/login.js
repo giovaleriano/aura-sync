@@ -12,11 +12,22 @@ function senhaForte(senha){
 
 criarConta.addEventListener("click", () => {
 
+    const usuario =
+    document.getElementById("usuario").value.trim();
+
     const email =
     document.getElementById("email").value.trim();
 
     const senha =
     document.getElementById("senha").value.trim();
+
+    if(!usuario){
+
+        msg.innerText =
+        "Digite um usuário.";
+
+        return;
+    }
 
     if(!email){
 
@@ -33,6 +44,11 @@ criarConta.addEventListener("click", () => {
 
         return;
     }
+
+    localStorage.setItem(
+        "usuarioNome",
+        usuario
+    );
 
     localStorage.setItem(
         "usuarioEmail",
@@ -57,11 +73,17 @@ form.addEventListener("submit",(e)=>{
 
     e.preventDefault();
 
+    const usuario =
+    document.getElementById("usuario").value.trim();
+
     const email =
     document.getElementById("email").value.trim();
 
     const senha =
     document.getElementById("senha").value.trim();
+
+    const usuarioSalvo =
+    localStorage.getItem("usuarioNome");
 
     const emailSalvo =
     localStorage.getItem("usuarioEmail");
@@ -70,6 +92,7 @@ form.addEventListener("submit",(e)=>{
     localStorage.getItem("usuarioSenha");
 
     if(
+        usuario === usuarioSalvo &&
         email === emailSalvo &&
         senha === senhaSalva
     ){
@@ -97,7 +120,7 @@ form.addEventListener("submit",(e)=>{
     }else{
 
         msg.innerText =
-        "E-mail ou senha inválidos.";
+        "Usuário, e-mail ou senha inválidos.";
     }
 
 });
