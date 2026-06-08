@@ -323,7 +323,12 @@ body{
         var(--bg-color);
     border-top: 1px solid rgba(255,255,255,0.05);
 }
-
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
 /* CTA */
 .footer-cta{
     max-width: 1200px;
@@ -570,4 +575,12 @@ body{
 }
 .legal-links a:hover{
     color: var(--primary-light);
+}
+
+
+/*IMAGENS*/
+.mode-icon img{
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
 }
