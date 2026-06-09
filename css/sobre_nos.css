@@ -611,3 +611,10 @@ body{
         grid-template-columns:1fr;
     }
 }
+
+.journey-step img,
+.tech-grid img{
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
