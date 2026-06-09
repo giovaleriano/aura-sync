@@ -40,131 +40,179 @@
         </div>
 
         <div class="tabs">
-            <button class="tab active">Todos</button>
-            <button class="tab">Ambientais</button>
-            <button class="tab">Navegação</button>
-            <button class="tab">Segurança</button>
-            <button class="tab">Sistema</button>
+            <button class="tab active" data-filter="todos">Todos</button>
+            <button class="tab" data-filter="gas">Gases</button>
+            <button class="tab" data-filter="navegacao">Navegação</button>
+            <button class="tab" data-filter="proximidade">Proximidade</button>
         </div>
 
         <div class="sensors-grid">
-            <!--Cards-->
-            <div class="sensor-card">
-                <h3>LiDAR 360°</h3>
 
-                <div class="sensor-visual lidar">
-                    <div class="pulse"></div>
+            <!-- Sensor 1: MQ-2 Gases Inflamáveis e Fumaça -->
+            <div class="sensor-card" data-category="gas">
+                <div class="sensor-header">
+                    <div class="sensor-badge badge-orange">MQ-2</div>
+                    <div class="sensor-status status-ok">Normal</div>
                 </div>
-
+                <h3>Gases Inflamáveis e Fumaça</h3>
+                <div class="sensor-visual gas-visual orange">
+                    <div class="gas-ring">
+                        <div class="gas-value">0.04%</div>
+                        <div class="gas-label">LEL</div>
+                    </div>
+                </div>
                 <div class="sensor-info">
                     <div>
-                        <span>Alcance</span>
-                        <strong>12.5 m</strong>
+                        <span>MQ2_PPM — Concentração</span>
+                        <strong>42 ppm</strong>
                     </div>
-
                     <div>
-                        <span>Resolução</span>
-                        <strong>0.5°</strong>
+                        <span>MQ2_LEL — Explosividade</span>
+                        <strong>0.04%</strong>
                     </div>
                 </div>
             </div>
 
-            <!--Temperatura-->
-            <div class="sensor-card">
-                <h3>Câmera Térmica</h3>
-
-                <div class="thermal-box">
-                    <span><img src="img/temperatura.png" alt="Temperatura"></span>
+            <!-- Sensor 2: MQ-3 Álcool e Gases Combustíveis -->
+            <div class="sensor-card" data-category="gas">
+                <div class="sensor-header">
+                    <div class="sensor-badge badge-yellow">MQ-3</div>
+                    <div class="sensor-status status-ok">Normal</div>
                 </div>
-
+                <h3>Álcool e Gases Combustíveis</h3>
+                <div class="sensor-visual gas-visual yellow">
+                    <div class="gas-ring">
+                        <div class="gas-value">0.12</div>
+                        <div class="gas-label">mg/L</div>
+                    </div>
+                </div>
                 <div class="sensor-info">
                     <div>
-                        <span>Temp.</span>
-                        <strong>28.4°C</strong>
+                        <span>MQ3_PPM — Concentração</span>
+                        <strong>120 ppm</strong>
                     </div>
-
                     <div>
-                        <span>Precisão</span>
-                        <strong>0.05°C</strong>
+                        <span>MQ3_MGL — Álcool no Ar</span>
+                        <strong>0.12 mg/L</strong>
                     </div>
                 </div>
             </div>
 
-            <!--Gás-->
-            <div class="sensor-card">
-                <h3>Detector de Gás</h3>
-
-                <div class="gas-circle">
-                    <div class="gas-value">
-                        0.04%
+            <!-- Sensor 3: MQ-7 Monóxido de Carbono -->
+            <div class="sensor-card" data-category="gas">
+                <div class="sensor-header">
+                    <div class="sensor-badge badge-red">MQ-7</div>
+                    <div class="sensor-status status-ok">Seguro</div>
+                </div>
+                <h3>Monóxido de Carbono</h3>
+                <div class="sensor-visual gas-visual red">
+                    <div class="gas-ring">
+                        <div class="gas-value">8</div>
+                        <div class="gas-label">ppm CO</div>
                     </div>
                 </div>
-
-                <p>Nível Normal</p>
-            </div>
-
-            <!--Ultrassom-->
-            <div class="sensor-card">
-                <h3>Ultrassom</h3>
-
-                <div class="radar"></div>
-
                 <div class="sensor-info">
                     <div>
-                        <span>Distância</span>
-                        <strong>2.45m</strong>
+                        <span>MQ7_PPM — Monóxido de Carbono</span>
+                        <strong>8 ppm</strong>
                     </div>
-
                     <div>
-                        <span>Status</span>
-                        <strong>Ativo</strong>
+                        <span>MQ7_COHB — Carboxihemoglobina</span>
+                        <strong>1.4%</strong>
                     </div>
                 </div>
             </div>
 
-            <!--Imu-->
-            <div class="sensor-card">
-                <h3>IMU / Movimento</h3>
-
-                <div class="imu-graph">
-                    <div class="line"></div>
+            <!-- Sensor 4: MOCR-1 Odometria e Cinemática -->
+            <div class="sensor-card wide" data-category="navegacao">
+                <div class="sensor-header">
+                    <div class="sensor-badge badge-blue">MOCR-1</div>
+                    <div class="sensor-status status-ok">Ativo</div>
                 </div>
-
+                <h3>Odometria e Cinemática Relativa</h3>
+                <div class="sensor-visual mocr-visual">
+                    <div class="mocr-track">
+                        <div class="mocr-dot"></div>
+                        <div class="mocr-line"></div>
+                    </div>
+                    <div class="mocr-metrics">
+                        <div class="mocr-metric">
+                            <div class="mocr-value">02:47</div>
+                            <div class="mocr-desc">Tempo de Volta</div>
+                        </div>
+                        <div class="mocr-metric">
+                            <div class="mocr-value">148.6 m</div>
+                            <div class="mocr-desc">Distância Total</div>
+                        </div>
+                    </div>
+                </div>
                 <div class="sensor-info">
                     <div>
-                        <span>Aceleração</span>
-                        <strong>0.02 m/s²</strong>
+                        <span>MOCR_TEMPO — Tempo de Volta Elapsado</span>
+                        <strong>02 min 47 s</strong>
                     </div>
-
                     <div>
-                        <span>Giroscópio</span>
-                        <strong>0.01 °/s</strong>
+                        <span>MOCR_DIST — Distância Total Percorrida</span>
+                        <strong>148.6 m</strong>
                     </div>
                 </div>
             </div>
 
-            <!--Umidade-->
-            <div class="sensor-card">
-                <h3>Umidade & Temp.</h3>
+            <!-- Sensor 5: HC-SR04 Ultrassônico -->
+            <div class="sensor-card wide" data-category="proximidade">
+                <div class="sensor-header">
+                    <div class="sensor-badge badge-cyan">HC-SR04</div>
+                    <div class="sensor-status status-ok">Ativo</div>
+                </div>
+                <h3>Ultrassônico — Proximidade e Distância</h3>
 
-                <div class="humidity-circle">
-                    <div>
-                        28.4°C
+                <div class="sensor-visual ultrassom-visual">
+                    <!-- Diagrama de vista superior do robô -->
+                    <div class="robo-diagram">
+                        <div class="dist-label top">
+                            <span class="dist-val" id="dist-front">1.85 m</span>
+                            <span class="dist-dir">Frente</span>
+                        </div>
+                        <div class="robo-row">
+                            <div class="dist-label left">
+                                <span class="dist-dir">Esquerda</span>
+                                <span class="dist-val" id="dist-left">0.92 m</span>
+                            </div>
+                            <div class="robo-body">
+                                <div class="robo-icon">⬡</div>
+                            </div>
+                            <div class="dist-label right">
+                                <span class="dist-val" id="dist-right">1.10 m</span>
+                                <span class="dist-dir">Direita</span>
+                            </div>
+                        </div>
+                        <div class="dist-label bottom">
+                            <span class="dist-dir">Traseira</span>
+                            <span class="dist-val" id="dist-back">2.40 m</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="sensor-info">
+                <div class="sensor-info sensor-info-4col">
                     <div>
-                        <span>Temperatura</span>
-                        <strong>28.4°C</strong>
+                        <span>HC-SR04_FRENTE</span>
+                        <strong>1.85 m</strong>
                     </div>
-
                     <div>
-                        <span>Umidade</span>
-                        <strong>56%</strong>
+                        <span>HC-SR04_DIREITA</span>
+                        <strong>1.10 m</strong>
+                    </div>
+                    <div>
+                        <span>HC-SR04_ESQUERDA</span>
+                        <strong>0.92 m</strong>
+                    </div>
+                    <div>
+                        <span>HC-SR04_TRASEIRA</span>
+                        <strong>2.40 m</strong>
                     </div>
                 </div>
             </div>
+
         </div>
     </main>
 
@@ -181,24 +229,20 @@
             </div>
         </section>
 
-        <!-- Seção Principal de Links (Fundo Claro) -->
         <section class="footer-links">
             <div class="container footer-links-grid">
-                <!-- Coluna 1: Logo e Descrição da Empresa -->
                 <div class="footer-column footer-company-info">
                     <div class="footer-logo">
-                        <img src="img/logo.png" alt="Logo_CredTech_Footer"> <!-- Placeholder para o seu logo -->
+                        <img src="img/logo.png" alt="Logo_Aura-Sync_Footer">
                     </div>
-                    <p class="footer-description">O Aura-Sync robótica, sensores inteligentes e monitoramento em tempo real.</p>
+                    <p class="footer-description">O Aura-Sync combina robótica, sensores inteligentes e monitoramento em tempo real.</p>
                     <div class="social-icons">
-                        <!-- Placeholders para os ícones de mídia social -->
-                        <a href="#"><img src="img/facebook.png" alt="Facebook"></a> 
+                        <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
                         <a href="#"><img src="img/linkedin.png" alt="LinkedIn"></a>
                         <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
                     </div>
                 </div>
 
-                <!-- Coluna 2: Institucional -->
                 <div class="footer-column">
                     <h3>Institucional</h3>
                     <ul>
@@ -209,10 +253,9 @@
                     </ul>
                 </div>
 
-                <!-- Coluna 4: Newsletter -->
                 <div class="footer-column footer-newsletter">
                     <h3>Receba Atualizações</h3>
-                    <p>Fique por dentro das Novidades do Aura Sync, atualizações do sistema e avanços em inspeção autônoma.</p>
+                    <p>Fique por dentro das novidades do Aura-Sync, atualizações do sistema e avanços em inspeção autônoma.</p>
                     <form class="newsletter-form">
                         <input type="email" placeholder="Endereço de e-mail" required>
                         <button type="submit">Inscrever-se</button>
@@ -221,7 +264,6 @@
             </div>
         </section>
 
-        <!-- Rodapé Inferior (Direitos Autorais e Legal) -->
         <section class="footer-bottom">
             <div class="container footer-bottom-content">
                 <p>&copy; 2026 Aura-Sync. Todos os direitos reservados.</p>
@@ -234,11 +276,6 @@
         </section>
     </footer>
 
-</div>
     <script src="js/sensores.js"></script>
-
 </body>
 </html>
-
-
-Sensores de Distância, humidade dos ar, etanol e carbono, alcool
